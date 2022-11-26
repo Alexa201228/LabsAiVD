@@ -1,10 +1,10 @@
 """
 Лабораторная работа №6 - Дисперсионный анализ.
-Данная лабораторная работа содержит
+Данная лабораторная работа содержит описание применения дисперсионного анализа при
+расчете остатка портфеля акций. За основу взята портфельная теория Марковица.
 """
 
-import matplotlib.pyplot as plt
-import numpy as np
+
 import pandas as pd
 from matplotlib.ticker import FuncFormatter
 from pypfopt.efficient_frontier import EfficientFrontier
@@ -20,7 +20,6 @@ if __name__ == '__main__':
     tickers = ['LKOH.ME', 'GMKN.ME', 'DSKY.ME', 'NKNC.ME', 'MTSS.ME', 'IRAO.ME', 'SBER.ME', 'AFLT.ME']
     df_stocks = yf.download(tickers, start='2018-01-01', end='2022-11-01')['Adj Close']
     nullin_df = pd.DataFrame(df_stocks, columns=tickers)
-    print(nullin_df.isnull().sum())
 
     # Годовая доходность
     mu = expected_returns.mean_historical_return(df_stocks)

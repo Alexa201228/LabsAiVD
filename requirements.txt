@@ -14,3 +14,4 @@ seaborn==0.12.1
 six==1.16.0
 statsmodels==0.13.5
 yfinance==0.1.87
+pyportfolioopt==1.5.3
