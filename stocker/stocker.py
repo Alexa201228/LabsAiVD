@@ -1,9 +1,9 @@
 # Quandl for financial analysis, pandas and numpy for data manipulation
-# fbprophet for additive models, #pytrends for Google trend data
+# prophet for additive models, #pytrends for Google trend data
 import quandl
 import pandas as pd
 import numpy as np
-import fbprophet
+import prophet
 import pytrends
 from pytrends.request import TrendReq
 
@@ -404,7 +404,7 @@ class Stocker:
     def create_model(self):
 
         # Make the model
-        model = fbprophet.Prophet(
+        model = prophet.Prophet(
             daily_seasonality=self.daily_seasonality,
             weekly_seasonality=self.weekly_seasonality,
             yearly_seasonality=self.yearly_seasonality,

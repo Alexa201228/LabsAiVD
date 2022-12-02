@@ -22,4 +22,4 @@ if __name__ == '__main__':
     print(microsoft.weekly_seasonality)
     microsoft.weekly_seasonality = True
     print(microsoft.weekly_seasonality)
-    model, future = microsoft.create_prophet_model(days=100)
+    model, future = microsoft.create_prophet_model(days=2000)

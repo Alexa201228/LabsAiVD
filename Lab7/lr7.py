@@ -7,7 +7,7 @@
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot
-from statsmodels.stats.power import TTestIndPower, TTestPower
+from statsmodels.stats.power import TTestPower
 import yfinance as yf
 
 if __name__ == '__main__':

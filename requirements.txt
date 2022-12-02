@@ -21,7 +21,7 @@ distlib==0.3.6
 ecos==2.0.10
 ephem==4.1.3
 factor-analyzer==0.4.1
-fbprophet==0.7.1
+prophet==1.1.1
 filelock==3.8.0
 flatbuffers==22.11.23
 fonttools==4.38.0
@@ -34,7 +34,6 @@ grpcio==1.51.1
 h5py==3.7.0
 hijri-converter==2.2.4
 holidays==0.17.2
-httpstan==4.9.0
 identify==2.5.9
 idna==3.4
 inflection==0.5.1
@@ -72,7 +71,6 @@ PyMeeus==0.5.11
 pyparsing==3.0.9
 pyportfolioopt==1.5.3
 pysimdjson==5.0.2
-pystan @ git+https://github.com/stan-dev/pystan2.git@1dd043db3c2618a9360a0f2ccbb57221634e5b08
 python-dateutil==2.8.2
 pytrends==4.8.0
 pytz==2022.6
